@@ -5,8 +5,9 @@
     <classes>
       <class name="Testcases.New_ContactTest">
         <methods>
-          <include name="verifyincompletedetails"/>
+          <include name="fillalldetails"/>
           <include name="beforemethod"/>
+          <include name="aftermethod"/>
         </methods>
       </class> <!-- Testcases.New_ContactTest -->
     </classes>
