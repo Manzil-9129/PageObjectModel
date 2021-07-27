@@ -11,16 +11,19 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import Utilities.TestUtil;
+import Utilities.Xls_Reader;
 
 public class TestBase {
 
 	public static WebDriver driver;
 	public static Properties pro;
-
+	
 	public TestBase() throws IOException {
 		pro=new Properties();
 		FileInputStream fI=new FileInputStream("C:\\Users\\SHIV\\eclipse-workspace\\PageModel\\config.properties");
 		pro.load(fI);
+		
+		Xls_Reader reader=new Xls_Reader("C:\\Users\\SHIV\\eclipse-workspace\\PageModel\\Sheet1.xlsx");
 	}
 	
 	

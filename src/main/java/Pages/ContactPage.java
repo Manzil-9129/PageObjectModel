@@ -38,32 +38,34 @@ public class ContactPage  extends TestBase{
 	    
 	}
 	
-	public void create_account()  {
+	public void verify_wrong_create_account(String email_1)  {
 	
 	signB.click();
-	emailCA.sendKeys(pro.getProperty("email2"));
+	emailCA.sendKeys(email_1);
 	CA_button.click();
 	
 	}
 	
-	public void create_account2() {
+	public void verifydetailspage(String email_2) throws IOException {
 		signB.click();
-		emailCA.sendKeys(pro.getProperty("email3"));
+		emailCA.sendKeys(email_2);
 		CA_button.click();
+	
 	}
 	
 	
-	public void validCA() {
-		String Actualresult="Invalid email address.";
-		System.out.println(Expectedresult.getText());
-		Assert.assertTrue(Actualresult.equals(Expectedresult.getText()));
+	public String validCA() {
 		
+		return Expectedresult.getText();
+		
+	
 		}
 	
-	public void validdetails() {
-		String Actualresult="YOUR PERSONAL INFORMATION";
-		System.out.println(Expectedresult2.getText());
-		Assert.assertTrue(Expectedresult2.getText().equals(Actualresult));
+
+	public String validdetails() {
+	
+		return Expectedresult2.getText();
+	
 	}
 	
 }

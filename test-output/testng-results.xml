@@ -1,49 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-07-25T19:21:09 EDT" name="Suite" finished-at="2021-07-25T19:21:58 EDT" duration-ms="48779">
+  <suite started-at="2021-07-27T02:15:06 EDT" name="Suite" finished-at="2021-07-27T02:18:44 EDT" duration-ms="217297">
     <groups>
     </groups>
-    <test started-at="2021-07-25T19:21:09 EDT" name="Test" finished-at="2021-07-25T19:21:58 EDT" duration-ms="48779">
+    <test started-at="2021-07-27T02:15:06 EDT" name="Test" finished-at="2021-07-27T02:18:44 EDT" duration-ms="217297">
+      <class name="Testcases.New_ContactTest">
+        <test-method is-config="true" signature="beforemethod()[pri:0, instance:Testcases.New_ContactTest@46944ca9]" started-at="2021-07-27T02:18:00 EDT" name="beforemethod" finished-at="2021-07-27T02:18:12 EDT" duration-ms="12508" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="fillalldetails()[pri:0, instance:Testcases.New_ContactTest@46944ca9]" started-at="2021-07-27T02:18:12 EDT" name="fillalldetails" finished-at="2021-07-27T02:18:20 EDT" duration-ms="7874" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillalldetails -->
+        <test-method is-config="true" signature="aftermethod()[pri:0, instance:Testcases.New_ContactTest@46944ca9]" started-at="2021-07-27T02:18:20 EDT" name="aftermethod" finished-at="2021-07-27T02:18:22 EDT" duration-ms="1651" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="beforemethod()[pri:0, instance:Testcases.New_ContactTest@46944ca9]" started-at="2021-07-27T02:18:22 EDT" name="beforemethod" finished-at="2021-07-27T02:18:37 EDT" duration-ms="14770" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="verifyincompletedetails()[pri:0, instance:Testcases.New_ContactTest@46944ca9]" started-at="2021-07-27T02:18:37 EDT" name="verifyincompletedetails" finished-at="2021-07-27T02:18:42 EDT" duration-ms="5588" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyincompletedetails -->
+        <test-method is-config="true" signature="aftermethod()[pri:0, instance:Testcases.New_ContactTest@46944ca9]" started-at="2021-07-27T02:18:42 EDT" name="aftermethod" finished-at="2021-07-27T02:18:44 EDT" duration-ms="1547" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+      </class> <!-- Testcases.New_ContactTest -->
       <class name="Testcases.NewTest">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Testcases.NewTest@1b6e1eff]" started-at="2021-07-25T19:21:09 EDT" name="beforeMethod" finished-at="2021-07-25T19:21:19 EDT" duration-ms="10064" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Testcases.NewTest@71529963]" started-at="2021-07-27T02:17:04 EDT" name="beforeMethod" finished-at="2021-07-27T02:17:16 EDT" duration-ms="11293" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="createaccount()[pri:0, instance:Testcases.NewTest@1b6e1eff]" started-at="2021-07-25T19:21:19 EDT" name="createaccount" finished-at="2021-07-25T19:21:22 EDT" duration-ms="3143" status="PASS">
+        <test-method signature="Validate_wrongemail()[pri:0, instance:Testcases.NewTest@71529963]" started-at="2021-07-27T02:17:16 EDT" name="Validate_wrongemail" finished-at="2021-07-27T02:17:20 EDT" duration-ms="4007" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createaccount -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Testcases.NewTest@1b6e1eff]" started-at="2021-07-25T19:21:22 EDT" name="afterMethod" finished-at="2021-07-25T19:21:25 EDT" duration-ms="2934" status="PASS">
+        </test-method> <!-- Validate_wrongemail -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Testcases.NewTest@71529963]" started-at="2021-07-27T02:17:20 EDT" name="afterMethod" finished-at="2021-07-27T02:17:22 EDT" duration-ms="2475" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Testcases.NewTest@1b6e1eff]" started-at="2021-07-25T19:21:25 EDT" name="beforeMethod" finished-at="2021-07-25T19:21:37 EDT" duration-ms="12066" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Testcases.NewTest@71529963]" started-at="2021-07-27T02:17:22 EDT" name="beforeMethod" finished-at="2021-07-27T02:17:34 EDT" duration-ms="11763" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="filldetails()[pri:0, instance:Testcases.NewTest@1b6e1eff]" started-at="2021-07-25T19:21:37 EDT" name="filldetails" finished-at="2021-07-25T19:21:40 EDT" duration-ms="2967" status="PASS">
+        <test-method signature="filldetails()[pri:0, instance:Testcases.NewTest@71529963]" started-at="2021-07-27T02:17:34 EDT" name="filldetails" finished-at="2021-07-27T02:17:36 EDT" duration-ms="2546" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- filldetails -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Testcases.NewTest@1b6e1eff]" started-at="2021-07-25T19:21:40 EDT" name="afterMethod" finished-at="2021-07-25T19:21:42 EDT" duration-ms="1954" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Testcases.NewTest@71529963]" started-at="2021-07-27T02:17:36 EDT" name="afterMethod" finished-at="2021-07-27T02:17:38 EDT" duration-ms="2148" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Testcases.NewTest@1b6e1eff]" started-at="2021-07-25T19:21:42 EDT" name="beforeMethod" finished-at="2021-07-25T19:21:54 EDT" duration-ms="11589" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Testcases.NewTest@71529963]" started-at="2021-07-27T02:17:38 EDT" name="beforeMethod" finished-at="2021-07-27T02:17:54 EDT" duration-ms="15439" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="login()[pri:0, instance:Testcases.NewTest@1b6e1eff]" started-at="2021-07-25T19:21:54 EDT" name="login" finished-at="2021-07-25T19:21:55 EDT" duration-ms="1832" status="PASS">
+        <test-method signature="login()[pri:0, instance:Testcases.NewTest@71529963]" started-at="2021-07-27T02:17:54 EDT" name="login" finished-at="2021-07-27T02:17:58 EDT" duration-ms="3633" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Testcases.NewTest@1b6e1eff]" started-at="2021-07-25T19:21:55 EDT" name="afterMethod" finished-at="2021-07-25T19:21:58 EDT" duration-ms="2179" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Testcases.NewTest@71529963]" started-at="2021-07-27T02:17:58 EDT" name="afterMethod" finished-at="2021-07-27T02:18:00 EDT" duration-ms="2306" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- Testcases.NewTest -->
+      <class name="Testcases.HomePageTest">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Testcases.HomePageTest@344f4dea]" started-at="2021-07-27T02:15:07 EDT" name="beforeMethod" finished-at="2021-07-27T02:15:18 EDT" duration-ms="11530" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="Validate_tshirtsLink()[pri:0, instance:Testcases.HomePageTest@344f4dea]" started-at="2021-07-27T02:15:18 EDT" name="Validate_tshirtsLink" finished-at="2021-07-27T02:15:18 EDT" duration-ms="286" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_tshirtsLink -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Testcases.HomePageTest@344f4dea]" started-at="2021-07-27T02:15:18 EDT" name="afterMethod" finished-at="2021-07-27T02:15:22 EDT" duration-ms="3500" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Testcases.HomePageTest@344f4dea]" started-at="2021-07-27T02:15:22 EDT" name="beforeMethod" finished-at="2021-07-27T02:15:34 EDT" duration-ms="12217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="ValidatedressesLink()[pri:0, instance:Testcases.HomePageTest@344f4dea]" started-at="2021-07-27T02:15:34 EDT" name="ValidatedressesLink" finished-at="2021-07-27T02:15:34 EDT" duration-ms="80" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidatedressesLink -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Testcases.HomePageTest@344f4dea]" started-at="2021-07-27T02:15:34 EDT" name="afterMethod" finished-at="2021-07-27T02:15:37 EDT" duration-ms="2648" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Testcases.HomePageTest@344f4dea]" started-at="2021-07-27T02:15:37 EDT" name="beforeMethod" finished-at="2021-07-27T02:15:47 EDT" duration-ms="10441" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="Validatewomenlink()[pri:0, instance:Testcases.HomePageTest@344f4dea]" started-at="2021-07-27T02:15:47 EDT" name="Validatewomenlink" finished-at="2021-07-27T02:15:47 EDT" duration-ms="92" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validatewomenlink -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Testcases.HomePageTest@344f4dea]" started-at="2021-07-27T02:15:47 EDT" name="afterMethod" finished-at="2021-07-27T02:17:04 EDT" duration-ms="76886" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- Testcases.HomePageTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

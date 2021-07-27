@@ -3,13 +3,12 @@
 <suite name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Testcases.NewTest">
+      <class name="Testcases.New_ContactTest">
         <methods>
-          <include name="afterMethod"/>
-          <include name="createaccount"/>
-          <include name="beforeMethod"/>
+          <include name="fillalldetails"/>
+          <include name="beforemethod"/>
         </methods>
-      </class> <!-- Testcases.NewTest -->
+      </class> <!-- Testcases.New_ContactTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

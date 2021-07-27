@@ -2,7 +2,11 @@
 <suite parallel="false" name="Suite">
   <test name="Test">
     <classes>
-      <class name="Testcases.NewTest"/>
+      <class name="Testcases.HomePageTest"/>
+       <class name="Testcases.NewTest"/>
+        <class name="Testcases.New_ContactTest"/>
+      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
+

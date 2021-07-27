@@ -2,12 +2,14 @@ package Testcases;
 
 import java.io.IOException;
 
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import Base.TestBase;
 import Pages.ContactPage;
+import Pages.CreateAccountPage;
 import Pages.LoginPage;
 
 public class NewTest extends TestBase{
@@ -21,7 +23,7 @@ public class NewTest extends TestBase{
 
 	ContactPage contact_page;
 	LoginPage LP;
-	
+	CreateAccountPage C_A_P;
 
 
 @BeforeMethod
@@ -38,30 +40,28 @@ public class NewTest extends TestBase{
 		LP.login();
 	}
  
- 
-  
+
+
     @Test
-	public void createaccount() {
-     
+    public void Validate_wrongemail() {
+    	contact_page.verify_wrong_create_account(pro.getProperty("email2"));
+    	String Actualresult="Invalid email address.";
+    	String Expectedresult=contact_page.validCA();
+		Assert.assertEquals(Actualresult,Expectedresult);
+    }
     
-     contact_page.create_account();
-     contact_page.validCA();
     
-     
-	 
-	}
-
   @Test
-  public void filldetails() 
+  public void filldetails() throws IOException 
   {
-  
- 
-  contact_page.create_account2();
-  contact_page.validdetails();
-  
-	
+  contact_page.verifydetailspage(pro.getProperty("email3"));
+   String Actualresult="YOUR PERSONAL INFORMATION";
+	String Expectedresult=contact_page.validdetails();
+	Assert.assertEquals(Actualresult, Expectedresult);
   }
+  
 
+ 
 
 
   @AfterMethod
