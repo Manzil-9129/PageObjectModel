@@ -8,12 +8,16 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+
 import Base.TestBase;
+import ExtentReportG.ExtentReportManager;
 import Utilities.TestUtil;
 
 public class CreateAccountPage extends TestBase {
 TestUtil Tu;
-	
+
 
 	//Checks the Checkbox
 	@FindBy(css="#id_gender1")
@@ -85,6 +89,8 @@ TestUtil Tu;
 	public boolean Verifysign_Up_page() throws IOException {
     return signuperror.isDisplayed();
 	}
+	
+
 
 
 	

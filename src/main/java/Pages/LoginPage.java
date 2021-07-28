@@ -8,11 +8,17 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+
 import Base.TestBase;
+import ExtentReportG.ExtentReportManager;
 
 public class LoginPage extends TestBase{
 
-	
+	ExtentReports reports;
+	ExtentTest Login;	
        
 	//PAGE FACTORY
 	
@@ -47,7 +53,24 @@ public class LoginPage extends TestBase{
 		
 		}
 		
+		public void reportGenerate() {
+		reports=new ExtentReports();
+        reports=ExtentReportManager.report();
+        Login=reports.createTest("Home-Page-Test");
+		}
 		
+		public void wrongemail_Log() {
+			 Login.log(Status.INFO, "Starting the test");
+			 Login.log(Status.INFO, "Opening the Browser");
+			 Login.log(Status.INFO, "Verify the wrong email");
+			 Login.log(Status.PASS,"Test Passed" );
+		}
 		
+		public void Login_Log() {
+			 Login.log(Status.INFO, "Starting the test");
+			 Login.log(Status.INFO, "Opening the Browser");
+			 Login.log(Status.INFO, "Login");
+			 Login.log(Status.PASS,"Test Passed" );
+		}
 		
 }

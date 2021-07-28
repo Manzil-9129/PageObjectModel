@@ -6,10 +6,16 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+
 import Base.TestBase;
+import ExtentReportG.ExtentReportManager;
 
 public class HomePage extends TestBase {
 
+	ExtentReports reports;
+	ExtentTest Details;	
   @FindBy(xpath="(//a[@class='sf-with-ul'])[1]")
   WebElement womenLink;
   
@@ -39,7 +45,13 @@ public class HomePage extends TestBase {
 	  return tshirtLink.isDisplayed();
   }
   
-  
+	public void reportGenerate() {
+		reports=new ExtentReports();
+
+		reports=ExtentReportManager.report();
+		Details=reports.createTest("Home-Page-Test");
+	}
+
   
 }
 
