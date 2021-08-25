@@ -3,6 +3,7 @@ package Pages;
 import java.io.IOException;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -16,6 +17,7 @@ public class HomePage extends TestBase {
 
 	ExtentReports reports;
 	ExtentTest Details;	
+	
   @FindBy(xpath="(//a[@class='sf-with-ul'])[1]")
   WebElement womenLink;
   
@@ -24,7 +26,10 @@ public class HomePage extends TestBase {
   
   @FindBy(xpath="(//a[@title='T-shirts'])[2]")
   WebElement tshirtLink;
-
+  
+  @FindBy(xpath="(//a[text()='T-shirts'])[1]")
+  WebElement tshirtslink;
+  
   public HomePage() throws IOException {
 	  super();
 	  PageFactory.initElements(TestBase.driver,this);
@@ -45,7 +50,7 @@ public class HomePage extends TestBase {
 	  return tshirtLink.isDisplayed();
   }
   
-	public void reportGenerate() {
+  public void reportGenerate() {
 		reports=new ExtentReports();
 
 		reports=ExtentReportManager.report();

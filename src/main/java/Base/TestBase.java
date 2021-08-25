@@ -9,6 +9,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Parameters;
 
 import Utilities.TestUtil;
 import Utilities.Xls_Reader;
@@ -24,6 +25,7 @@ public class TestBase {
 		pro.load(fI);
 		
 		Xls_Reader reader=new Xls_Reader("C:\\Users\\SHIV\\eclipse-workspace\\PageModel\\Sheet1.xlsx");
+		
 	}
 	
 	
@@ -31,12 +33,12 @@ public class TestBase {
 		String browser=pro.getProperty("browser");
 		if(browser.equals("Firefox"))
 		{
-		System.setProperty("webdriver.gecko.driver","C:\\Users\\SHIV\\Desktop\\New folder\\Driver\\geckodriver-v0.29.1-win64\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver","C:\\Selenium Project\\geckodriver.exe");
 		driver=new FirefoxDriver();
 		}
 		else if (browser.equals("Chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver","C:\\Users\\SHIV\\Desktop\\New folder\\Driver\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver","C:\\Selenium Project\\chromedriver.exe");
 		}
 		else
 		{

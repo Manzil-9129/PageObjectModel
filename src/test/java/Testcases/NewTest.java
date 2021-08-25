@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -32,6 +33,7 @@ public NewTest() throws IOException {
 
 
 @BeforeMethod
+
 	  public void beforeMethod() throws IOException {
 	reports=new ExtentReports();
     reports=ExtentReportManager.report();

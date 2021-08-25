@@ -17,6 +17,7 @@ import Utilities.Xls_Reader;
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 
 import java.io.IOException;
 
@@ -36,9 +37,8 @@ public New_ContactTest() throws IOException {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-  
-
 @BeforeMethod
+
 public void beforemethod() throws IOException {
 	reports=new ExtentReports();
 

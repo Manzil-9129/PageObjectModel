@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite parallel="false" name="Suite">
+<suite parallel="methods" name="Suite">
   <test name="Test">
+  <paramter name="browser" value="Chrome" />
     <classes>
       <class name="Testcases.HomePageTest"/>
        <class name="Testcases.NewTest"/>

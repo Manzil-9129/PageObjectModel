@@ -11,6 +11,7 @@ import ExtentReportG.ExtentReportManager;
 import Pages.HomePage;
 
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 
 import java.io.IOException;
 import org.testng.Assert;
@@ -21,13 +22,15 @@ public class HomePageTest extends TestBase{
    HomePage HP;
    ExtentReports reports;	
    ExtentTest Home_Page;
-	public HomePageTest() throws IOException {
+	
+   public HomePageTest() throws IOException {
 		super();
 		// TODO Auto-generated constructor stub
 	
 	}
 	
-	@BeforeMethod
+	@BeforeMethod(alwaysRun=true)
+	
 	  public void beforeMethod() throws IOException {
 	  reports=new ExtentReports();
 	  reports=ExtentReportManager.report();
@@ -37,7 +40,7 @@ public class HomePageTest extends TestBase{
 	  
 	 }
 
-	@Test
+	@Test(groups="Test")
   public void Validatewomenlink() {
         
 
@@ -49,7 +52,7 @@ public class HomePageTest extends TestBase{
         Assert.assertTrue(flag);
 	}
 	
-	@Test
+	@Test(groups="Test")
 	public void ValidatedressesLink() {
 	
         
@@ -62,7 +65,7 @@ public class HomePageTest extends TestBase{
 	    Assert.assertTrue(flag);
 	}
 	
-	@Test
+	@Test(groups="Test")
 	public void Validate_tshirtsLink() {
         
 
@@ -76,7 +79,7 @@ public class HomePageTest extends TestBase{
   
 	
 
-  @AfterMethod
+  @AfterMethod(alwaysRun=true)
   public void afterMethod() {
       reports.flush();
 	  driver.quit();

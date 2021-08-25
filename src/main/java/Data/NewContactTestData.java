@@ -17,7 +17,7 @@ public NewContactTestData() throws IOException {
 
 
 
-@DataProvider
+@DataProvider(name="data")
 public static Object[][] data() throws IOException{
 	Xls_Reader reader=new Xls_Reader("C:\\Users\\SHIV\\eclipse-workspace\\PageModel\\Sheet1.xlsx");
     TestUtil Tu=new TestUtil();
