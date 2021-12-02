@@ -12,18 +12,24 @@ import ExtentReportG.ExtentReportManager;
 import Pages.ContactPage;
 import Pages.CreateAccountPage;
 import Pages.LoginPage;
+import Utilities.Listener_Class;
 import Utilities.TestUtil;
 import Utilities.Xls_Reader;
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 
 import java.io.IOException;
 
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.TimeoutException;
+import org.openqa.selenium.WebDriverException;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 
+@Listeners(Listener_Class.class)
 public class New_ContactTest extends TestBase{
 CreateAccountPage C_A_P;
 ContactPage CP;
@@ -37,11 +43,12 @@ public New_ContactTest() throws IOException {
 		super();
 		// TODO Auto-generated constructor stub
 	}
+
 @BeforeMethod
 
 public void beforemethod() throws IOException {
 	reports=new ExtentReports();
-
+    
 	reports=ExtentReportManager.report();
 	Details=reports.createTest("Details Test");
 	browserinitialize();
@@ -72,7 +79,7 @@ public void beforemethod() throws IOException {
  
 
  @Test
- public void verifyincompletedetails() throws IOException {
+ public void verifyincompletedetails() throws IOException,TimeoutException,WebDriverException,NoSuchElementException {
 
 		Details.log(Status.INFO, "Starting the test");
 		Details.log(Status.INFO, "Opening the Browser");

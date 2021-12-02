@@ -1,11 +1,16 @@
 package Base;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
+import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -29,10 +34,15 @@ public class TestBase {
 	}
 	
 	
+	
+	
+
 	public void browserinitialize() throws IOException {
+	
 		String browser=pro.getProperty("browser");
 		if(browser.equals("Firefox"))
 		{
+			
 		System.setProperty("webdriver.gecko.driver","C:\\Selenium Project\\geckodriver.exe");
 		driver=new FirefoxDriver();
 		}
@@ -52,10 +62,16 @@ public class TestBase {
 	    driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT,TimeUnit.SECONDS);  
 	    driver.get("http://automationpractice.com/index.php");
 
-		
-	}
+		}
 	
-		
+		public void failed() throws IOException {
+			
+			
+			File src2=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+			
+			FileUtils.copyFile(src2, new File("C:\\Users\\SHIV\\eclipse-workspace\\PageModel\\Screenshots\\FailedTestCases.jpg"));
+			
+		}
 		
 		
 		

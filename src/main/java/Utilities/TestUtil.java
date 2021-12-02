@@ -17,7 +17,7 @@ public class TestUtil extends TestBase {
 		// TODO Auto-generated constructor stub
 	}
 
-
+	Integer[] number= {3,4,5,6};
 	public static long PAGE_LOAD_TIMEOUT=20;
 	public static long IMPLICIT_WAIT=10;
 	
@@ -28,7 +28,7 @@ public class TestUtil extends TestBase {
 	ArrayList<String> data=new ArrayList<>();
 	
 	for(int i=2;i<=reader.getRowCount("Sheet1");i++)
-	{
+	{  
 		for(int j=0;j<reader.getColumnCount("Sheet1");j++)
 		{
 			data.add(reader.getCellData("Sheet1",j,i));

@@ -2,6 +2,7 @@ package Pages;
 
 import java.io.IOException;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -10,7 +11,7 @@ import org.testng.Assert;
 import Base.TestBase;
 
 public class ContactPage  extends TestBase{
-
+ContactPage p=new ContactPage();
 
 	//Enter email in create account
 	@FindBy(css="#email_create")
@@ -34,6 +35,7 @@ public class ContactPage  extends TestBase{
 
 	public ContactPage() throws IOException {
 		super();
+		
 		PageFactory.initElements(TestBase.driver,this);
 	    
 	}
