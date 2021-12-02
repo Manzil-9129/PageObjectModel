@@ -1,21 +1,24 @@
 	package Pages;
 
 import java.io.IOException;
+import java.util.List;
 
-
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.sun.org.apache.bcel.internal.generic.Select;
 
 import Base.TestBase;
 import ExtentReportG.ExtentReportManager;
 import Utilities.TestUtil;
 
-public class CreateAccountPage extends TestBase {
+public  class CreateAccountPage extends TestBase {
 TestUtil Tu;
 
 
@@ -23,7 +26,7 @@ TestUtil Tu;
 	@FindBy(css="#id_gender1")
 	WebElement mrcheckbox;
 	
-	//
+	
 	@FindBy(css="#customer_firstname")
 	WebElement firstnamebox;
 	
@@ -35,8 +38,6 @@ TestUtil Tu;
 	
 	@FindBy(css="#days")
 	WebElement selectdays;
-	
-	
 	
 	@FindBy(css="#months")
 	WebElement month;
@@ -89,6 +90,8 @@ TestUtil Tu;
 	public boolean Verifysign_Up_page() throws IOException {
     return signuperror.isDisplayed();
 	}
+
+
 	
 
 

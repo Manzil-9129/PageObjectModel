@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -17,7 +18,9 @@ import ExtentReportG.ExtentReportManager;
 import Pages.ContactPage;
 import Pages.CreateAccountPage;
 import Pages.LoginPage;
+import Utilities.Listener_Class;
 
+@Listeners(Listener_Class.class)
 public class NewTest extends TestBase{
 ContactPage contact_page;
 LoginPage LP;

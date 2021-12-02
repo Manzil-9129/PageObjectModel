@@ -9,8 +9,11 @@ import com.aventstack.extentreports.Status;
 import Base.TestBase;
 import ExtentReportG.ExtentReportManager;
 import Pages.HomePage;
+import Utilities.Listener_Class;
 
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 
 import java.io.IOException;
@@ -18,16 +21,18 @@ import org.testng.Assert;
 
 import org.testng.annotations.AfterMethod;
 
+@Listeners(Listener_Class.class)
 public class HomePageTest extends TestBase{
+  
    HomePage HP;
    ExtentReports reports;	
    ExtentTest Home_Page;
-	
+   
    public HomePageTest() throws IOException {
 		super();
 		// TODO Auto-generated constructor stub
-	
 	}
+   
 	
 	@BeforeMethod(alwaysRun=true)
 	
@@ -55,8 +60,7 @@ public class HomePageTest extends TestBase{
 	@Test(groups="Test")
 	public void ValidatedressesLink() {
 	
-        
-
+    
 		Home_Page.log(Status.INFO, "Starting the test");
 		Home_Page.log(Status.INFO, "Opening the Browser");
 		Home_Page.log(Status.INFO, "Verify Dresses link");
@@ -65,7 +69,13 @@ public class HomePageTest extends TestBase{
 	    Assert.assertTrue(flag);
 	}
 	
-	@Test(groups="Test")
+	
+	@DataProvider(name="man")
+	public void k() {
+		
+	}
+	
+	@Test(groups="Test",dependsOnMethods= {"ValidatedressesLink"})
 	public void Validate_tshirtsLink() {
         
 
@@ -77,7 +87,10 @@ public class HomePageTest extends TestBase{
 	    Assert.assertTrue(flag);
 	}
   
-	
+	@Test
+	public void Validating_the_response() {
+		System.out.println("Hey");
+	}
 
   @AfterMethod(alwaysRun=true)
   public void afterMethod() {
