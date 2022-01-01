@@ -36,7 +36,7 @@ ContactPage p=new ContactPage();
 	public ContactPage() throws IOException {
 		super();
 		
-		PageFactory.initElements(TestBase.driver,this);
+		//PageFactory.initElements(TestBase.driver,this);
 	    
 	}
 	
@@ -59,8 +59,6 @@ ContactPage p=new ContactPage();
 	public String validCA() {
 		
 		return Expectedresult.getText();
-		
-	
 		}
 	
 

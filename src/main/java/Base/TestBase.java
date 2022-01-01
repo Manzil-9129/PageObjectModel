@@ -35,8 +35,6 @@ public class TestBase {
 	
 	
 	
-	
-
 	public void browserinitialize() throws IOException {
 	
 		String browser=pro.getProperty("browser");

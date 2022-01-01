@@ -91,8 +91,8 @@ public void beforemethod() throws IOException {
 	    CP=new ContactPage();
 		CP.verifydetailspage(pro.getProperty("email3"));
 		C_A_P.Registerbutton();
-	    boolean Expectedresult=C_A_P.Verifysign_Up_page();
-	    Assert.assertTrue(Expectedresult);
+	    boolean Actualresult=C_A_P.Verifysign_Up_page();
+	    Assert.assertTrue(Actualresult);
 	 
  }
  
@@ -107,8 +107,8 @@ public void beforemethod() throws IOException {
 	 
 	 
       CP.verifydetailspage(pro.getProperty("email3"));
-      String Actualresult="YOUR PERSONAL INFORMATION";
-	  String Expectedresult=CP.validdetails();
+      String Expectedresult="YOUR PERSONAL INFORMATION";
+	  String Actualresult=CP.validdetails();
 	 Assert.assertEquals(Actualresult, Expectedresult);
  }
  
