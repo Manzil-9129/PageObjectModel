@@ -12,7 +12,7 @@ import Base.TestBase;
 
 public class ContactPage  extends TestBase{
 ContactPage p=new ContactPage();
-
+// HI 
 	//Enter email in create account
 	@FindBy(css="#email_create")
 	WebElement emailCA;
