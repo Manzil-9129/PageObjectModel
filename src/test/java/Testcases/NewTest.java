@@ -69,8 +69,8 @@ public NewTest() throws IOException {
 	   Login.log(Status.PASS,"Test Passed" );
 	
 	    contact_page.verify_wrong_create_account(pro.getProperty("email2"));
-    	String Actualresult="Invalid email address.";
-    	String Expectedresult=contact_page.validCA();
+    	String Expectedresult="Invalid email address.";
+    	String Actualresult=contact_page.validCA();
 		Assert.assertEquals(Actualresult,Expectedresult);
     }
     
