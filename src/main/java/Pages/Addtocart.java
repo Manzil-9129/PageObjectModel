@@ -12,7 +12,7 @@ import org.openqa.selenium.support.PageFactory;
 public class Addtocart  extends TestBase {
 
 	//This is Add to cart page 
-
+    //Fixed
 
 	
 
